@@ -68,13 +68,11 @@ The contract includes several error constants to handle different scenarios:
 3. Implement variable interest rates based on utilization.
 4. Add events for important actions (deposits, withdrawals, borrows).
 
-## Testing
-
-(Note: Add information about your testing strategy and how to run tests once implemented.)
 
 ## Deployment
 
-(Note: Add information about how to deploy this contract to testnet and mainnet once you've set up the deployment process.)
+``clarinet deployment generate --testnet --medium-cost``
+```clarinet deployment apply --testnet``
 
 ## Contributing
 
