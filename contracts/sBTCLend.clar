@@ -37,7 +37,7 @@
     )
 )
 
-(define-public (withdraw (amount uint)))
+(define-public (withdraw (amount uint))
     (let (
         (current-balance (default-to u0 (get amount (map-get? deposits { owner: tx-sender })))
         (total-deposited (default-to u0 (get amount (map-get? deposits { owner: tx-sender }))))
@@ -48,7 +48,7 @@
         (var-set total-deposits (- (var-get total-deposits) amount))
         (ok true)
     )
-)
+))
 
 (define-public (borrow (amount uint))
     (let (
