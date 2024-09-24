@@ -30,7 +30,7 @@
     (let (
         (current-balance (default-to u0 (get amount (map-get? deposits { owner: tx-sender }))))
         )
-        (try! (contract-call? .sBTC transfer amount tx-sender (as-contract tx-sender) none))
+        (try! (contract-call? ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.sBTC transfer amount tx-sender (as-contract tx-sender) none))
         (map-set deposits { owner: tx-sender } { amount: (+ current-balance amount) })
         (var-set total-deposits (+ (var-get total-deposits) amount))
         (ok true)
