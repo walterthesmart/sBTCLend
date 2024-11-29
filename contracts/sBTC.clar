@@ -1,5 +1,3 @@
-(impl-trait 'ST31AT1T96E4CF8C2QZ7FCFC99WJCTV2GTTN3ZQKB.sip-010-trait-ft-standard.sip-010-trait)
-
 (define-constant contract-owner tx-sender)
 (define-constant err-owner-only (err u100))
 (define-constant err-not-token-owner (err u101))

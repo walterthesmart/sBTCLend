@@ -1,5 +1,6 @@
 ;; Enhanced Lending and Borrowing Protocol
 
+
 ;; Constants for error handling
 (define-constant ERR-NO-INTEREST (err u100))
 (define-constant ERR-OVERPAY (err u200))
